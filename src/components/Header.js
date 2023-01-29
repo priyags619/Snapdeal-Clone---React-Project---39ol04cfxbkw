@@ -17,7 +17,7 @@ function Header() {
     
     <a class="navbar-brand" href="#">Cart</a>
    
-    <a class="navbar-brand" href="#">Priya</a>
+    <a class="navbar-brand" href="#">Username</a>
 
    
     
