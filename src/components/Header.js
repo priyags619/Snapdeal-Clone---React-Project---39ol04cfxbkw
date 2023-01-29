@@ -12,7 +12,7 @@ function Header() {
     
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search products & brands" aria-label="Search" />
-      <button class="navbar-brand btn btn-outline-danger" type="submit">Search</button>
+      <button class="navbar-brand btn btn-outline-success" type="submit">Search</button>
     </form>
     
     <a class="navbar-brand" href="#">Cart</a>
