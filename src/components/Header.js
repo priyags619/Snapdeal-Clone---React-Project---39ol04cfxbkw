@@ -1,0 +1,31 @@
+import React from 'react'
+import './Stylesheet.css'
+
+
+function Header() {
+  return (
+   <div  >
+   <nav class="bg-danger p-2 text-dark bg-opacity-80 navbar bg-body-tertiary">
+  <div class="container-fluid">
+  <img src="data:image/png;base64,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" width="100px" height="50px"></img>
+
+    
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search products & brands" aria-label="Search" />
+      <button class="navbar-brand btn btn-outline-success" type="submit">Search</button>
+    </form>
+    
+    <a class="navbar-brand" href="#">Cart</a>
+   
+    <a class="navbar-brand" href="#">Priya</a>
+
+   
+    
+  </div>
+</nav>
+
+   </div>
+  )
+}
+
+export default Header
