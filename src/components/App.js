@@ -7,7 +7,6 @@ class App extends React.Component {
     super(props)
   }
 
-
   render() {
     return (
       <div>
@@ -56,11 +55,11 @@ class App extends React.Component {
 
                     <div className="row ">
 
-                      <div className='col-md-10 '>
+                      <div className='col-md-10'>
                         <input className='form-control' placeholder='    Search products &amp; brands'></input>
                         <div className='bg-white inputBox position-absolute'>
-                          <h4>Trending Searches</h4>
-                          <ul className="">
+                          <h3 className='bg-danger p-3 mt-3'>Trending Searches</h3>
+                          <ul className="list-unstyled">
                             <li className="nav-item">
                               <a className="nav-link"  href="#">Shoes</a>
                             </li>
@@ -170,4 +169,3 @@ class App extends React.Component {
 }
 App.propTypes = {}
 export default App
-
