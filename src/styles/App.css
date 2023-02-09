@@ -9,20 +9,47 @@ header{
     background-color: #e40046;
     border: 1px dashed red;
 }
+.parent{
+    position: relative;
+}
+.parent-container{
+    position: relative;
+}
+.right-bar{
+    position: absolute;
+    top: 28%;
+    left: 140%;
+}
+.a_hbot_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.right-bar ul li a{
+    color: white;
+    font-size: 1rem;
+
+}
 .inputBox{
     width: 519px;
-    height: 367px;
+    height: 267px;
     z-index: 1000;
     box-shadow: 0px 0px 3px black;
     display: none;
     margin-left: 15px;
 }
 .inputBox ul a{
-    color: red !important;
+    color: #333 !important;
     font-size: large;
 }
 .inputBox ul a:hover{
 background: rgb(239, 234, 234) !important;
+}
+.list-unstyled{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.list-unstyled li{
+    margin: 7px 0px ;
 }
 
 .a_hform{
@@ -48,7 +75,6 @@ border: none !important;
     background: #c7003d;
 }
 .a_header_top > .container {
-    
     height: 100%;
     max-width: 1225px !important;
 }
@@ -58,10 +84,12 @@ border: none !important;
 }
 .a_header_bottom{
     height: 65px;
-    border: 1px dashed red;
+    border: none;
+    z-index:1000;
+    background: #e40046;
 }
 .a_header_bottom > .container {
-    border: 1px dashed #000;
+    border: none;
     height: 110%;
     max-width: 1225px !important;
 }
@@ -70,8 +98,44 @@ border: none !important;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     padding-bottom: 10px;
-   margin-top: 0px;
+    margin-top: 0px;
    
+}
+.a_hbot_nav a{
+    display: block; 
+}
+.modal-body-empty-cart{
+    justify-content: center;
+}
+.a_b1{
+    margin-right: -65px;
+}
+.a_b1:hover{
+    margin-right: -80px;
+    background-color: #333;
+    padding: 1.0rem;
+    margin-top: -15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+.a_hbot_nav > li:first-child{
+    border-color: #e40046 !important;
+}
+.a_hbot_nav > li:hover ul{
+    display: block;
+}
+.a_hbot_nav > li ul{
+    position: absolute;
+    width: 190px;
+    height: 260px;
+    background: #333;
+    z-index: 100px;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    display: none;
+    margin-left: -80px;
 }
 
 a{text-decoration:none;}

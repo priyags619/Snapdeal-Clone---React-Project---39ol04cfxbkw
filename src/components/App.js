@@ -6,10 +6,41 @@ class App extends React.Component {
   constructor(props) {
     super(props)
   }
-
+  /*state = {
+    x: ''
+  }
+  handleScroll = () => {
+    console.log('ok' + window.scrollY)
+    if (window.scrollY >= 50) {
+      //add
+      this.setState({ x: 'position-fixed top-0 start-0' });
+    } else {
+      //remove
+      this.setState({ x: '' });
+    }
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }*/
   render() {
     return (
       <div>
+        <div class="modal" id="exampleModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="text-center modal-body p-3 mt-4p">
+                <h5>Shopping Cart is empty</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <header>
           <div className='a_header_top p-1'>
             <div className="container p-0">
@@ -36,11 +67,11 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div className='a_header_bottom '>
+          <div className='a_header_bottom w-100 ' >
 
             <div className="container ps-0">
 
-              <div className='row'>
+              <div className='row parent'>
 
                 <div className=' btn col-3 m-0 ps-0 ms-0'>
                   <a href="#" className=''>
@@ -58,10 +89,11 @@ class App extends React.Component {
                       <div className='col-md-10'>
                         <input className='form-control' placeholder='    Search products &amp; brands'></input>
                         <div className='bg-white inputBox position-absolute'>
-                          <h3 className='bg-danger p-3 mt-3'>Trending Searches</h3>
-                          <ul className="list-unstyled">
+                          <h5 className=' p-1 mt-1 ms-2'>
+                            <img src="https://cdn1.vectorstock.com/i/1000x1000/57/30/single-analytic-icon-increasing-graph-vector-29565730.jpg" height="20px" width="20px" /> Trending Searches</h5>
+                          <ul className="list-unstyled ">
                             <li className="nav-item">
-                              <a className="nav-link"  href="#">Shoes</a>
+                              <a className="nav-link" href="#">Shoes</a>
                             </li>
                             <li className="nav-item">
                               <a className="nav-link" href="#">Sarees</a>
@@ -86,13 +118,26 @@ class App extends React.Component {
 
                 </div>
 
-                <div className='col-3 '>
-                  <ul className="nav a_hbot_nav">
-                    <li className="nav-item">
-                      <a className="nav-link " aria-current="page" href="#">Cart</a>
+                <div className='col-3 right-bar'>
+                  <ul className="nav a_hbot_nav ">
+                    <li className="nav-item border-start border-end ">
+                      <a className=" cart" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" height="20px" width="20px" /> Cart</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Sign in</a>
+                      <a className="a_b1 " href="#"> <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" height="25px" width="25px" /> Sign in</a>
+                      <ul className='sign-in-list'>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Your Account</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Your Orders</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Shortlist</a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
