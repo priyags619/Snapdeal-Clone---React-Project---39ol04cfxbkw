@@ -168,18 +168,57 @@ a{text-decoration:none;}
 .a_main{
     background-color: #f7f7f7;
     border: 1px dashed green;
+    color: #777;
+    font-size: 15px;
+    
+    
 }
 .a_main1{
     border: 1px dashed #000;
-    height: 6673px;
+    height: 673px;
     max-width: 1225px !important; 
+    color: #777;
+  
 }
 .a_main1_b1{
     border: 1px dashed red;
     height: 816px;
+    
 }
 .a_main1_b1 > div{
     border: 1px dashed #000;
+}
+.asidenav a{
+    color: #333;
+    border-left: 3px solid white;
+    color: #777;
+    font-family: inherit;
+
+}
+.asidenav a:hover{
+    border-left: 3px solid #e40046;
+    background: #f2eaea;
+    color: #333;
+}
+.asidenav > li:hover > a{
+    border-left: 3px solid #e40046;
+    background: #f2eaea;
+    color: #333;
+}
+
+.asidenav_rightbox{
+    width: 900px;
+    height: 550px;
+    background-color: red;
+    z-index: 1000;
+    left: 190px;
+    display: none;
+}
+.asidenav > li:hover div{
+    display: block;
+}
+.asidenav2 a{
+    padding: 5px 10px 5px 10px !important;
 }
 .a_slider{
     height: 345px;
@@ -195,6 +234,45 @@ a{text-decoration:none;}
     border-bottom: #000 !important;
     font: black;
 }
+/*.a_pinging{
+    height:476px;
+    width:849px;
+    background-image: url(https://couponswala.com/blog/wp-content/uploads/2021/10/Snapdeal-Upcoming-Sale.jpg);
+}*/
+.a_pinging{
+    margin-left: -8px;
+}
+
+.login{
+    border: none;
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: #7f7171;
+    color: #777;
+    
+
+    
+}
+.next{
+    margin-top: -5px;
+    background: #d9bbbb;
+    color: #777;
+    border: none;
+    padding: 2px;
+    border-radius: 2px;
+    padding-left: 9px;
+    font-size: 15px;
+}
+.a_sliderrbox{
+    width: 255px;
+    height: 344px;
+    background: #f8efef;
+}
+.a_sliderrbox > div{
+height: 274px;
+
+}
 .a_trending_products{
     height: 450px;
     border: 1px dashed red;
@@ -207,18 +285,57 @@ footer{
     background-color: #f7f7f7;
     border: 1px dashed blue;
 }
-.a_foot1{
+/*.a_foot1{
     border: 1px dashed red;
     height: 550px;
     max-width: 1225px !important; 
+}*/
+.a_foot2 a:hover{
+    text-decoration: underline;
+}
+.a_foot2 a{
+color: #999;
+font-size: 15px;
+font-family: inherit;
+}
+.footer_para{
+    font-size: 15px;
+    font-family: inherit;
+    color: #8e8b8b;
+}
+.footer_head{
+    color: #949292;
+    font-family: inherit;
 }
 .a_foot2{
     border: 1px dashed green;
-    height: 997px;
+    height: 450px;
     max-width: 1225px !important; 
 }
 .a_foot3{
     border: 1px dashed orange;
     height: 46px;
+    font-family: inherit;
+    color: #777;
     max-width: 1225px !important; 
+}
+
+/*Animation*/
+.a_heart{
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes heartbeat{
+    0%{
+     transform: scale(1,1);   
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1,1);
+    }
 }
