@@ -19,6 +19,7 @@ header{
     position: absolute;
     top: 28%;
     left: 140%;
+    z-index: 1000;
 }
 .a_hbot_nav{
     display: flex;
