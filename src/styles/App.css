@@ -107,9 +107,9 @@ border: none !important;
 .a_hbot_nav a{
     display: block; 
 }
-.modal-body-empty-cart{
+/* .modal-body-empty-cart{
     justify-content: center;
-}
+} */
 .a_b1{
     margin-right: -65px;
 }
@@ -131,14 +131,17 @@ border: none !important;
 }
 .a_hbot_nav > li ul{
     position: absolute;
-    width: 190px;
-    height: 260px;
+    width: 180px;
+    height: 310px;
     background: #333;
     z-index: 100px;
     border-radius: 3px;
     border-top-right-radius: 0px;
     display: none;
-    margin-left: -80px;
+    margin-left: -70px;
+}
+.sign-in-list{
+    background: black !important;
 }
 
 a{text-decoration:none;}
@@ -167,6 +170,12 @@ a{text-decoration:none;}
 }
 .a_hbot_nav{
     margin-left: 0px;
+}
+.new_user{
+    color: #d9bbbb;
+}
+.signin_bottom{
+    margin-top: 20px;
 }
 .a_main{
     background-color: #f7f7f7;

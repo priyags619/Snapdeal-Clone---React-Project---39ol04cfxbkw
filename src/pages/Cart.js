@@ -11,9 +11,7 @@ class Cart extends Component {
  state = {}
  render() {
   return(
-    <Layout>
    <div>This is a cart page</div>
-   </Layout>
     )
    }
  }
