@@ -18,7 +18,7 @@ class Home extends React.Component {
                     <div className='container p-0 a_main1 mt-3'>
 
                         <div className='row m-0 a_main1_b1'>
-                            <div className='col-2 bg-white pe-0 pt-3 pb-3 position-relative'>
+                            <div className='col-2 bg-white main_b1_left pe-0 pt-3 pb-3 position-relative'>
                                 <h6 className='fs-6'>TOP CATEGORIES</h6>
                                 <ul class=" nav flex-column asidenav">
                                     <li class="nav-item">
@@ -66,6 +66,7 @@ class Home extends React.Component {
                                     </li>
                                 </ul>
                             </div>
+
                             <div className='col-10'>
 
                                 <div className='a_slider row'>
@@ -101,10 +102,6 @@ class Home extends React.Component {
                                             </button>
                                         </div>
                                     </div>
-
-
-
-
                                     <div className='col-3 position-relative'>
 
                                         <div className="a_sliderrbox position-absolute top-0 start-0 login">
@@ -127,14 +124,101 @@ class Home extends React.Component {
 
                                 </div>
 
-                                <div className='a_trending_products'></div>
+                                <div className='a_trending_products'>
+                                    <h3>Trending Products</h3>
+                                    <div id="carouselExampleControls" className="carousel slide carousel_trending" data-bs-ride="carousel">
+                                        <div className="carousel-inner text-start">
+
+                                            <div className="carousel-item active p-2">
+                                                <div className='row m-0 h-100'>
+                                                    <div className='col tbdr p-0 '>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">1</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">2</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">3</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">4</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="carousel-item p-2">
+                                                <div className='row m-0 h-100'>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">5</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">6</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">7</a>
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                       <a className="btn btn-white rounded-0 w-100 h-100">8</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="carousel-item p-2">
+                                                <div className='row m-0 h-100'>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">9</a>
+
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">10</a>
+
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">11</a>
+
+                                                    </div>
+                                                    <div className='col tbdr p-0'>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">12</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span className="visually-hidden">Previous</span>
+                                        </button>
+                                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span className="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
 
                             </div>
+                        </div>
 
+                    </div>
+                    <div className='text-center mt-200 p-3'>
+                        <button className='btn load btn-dark w-25'>Load More</button>
+                    </div>
+                    <div className='container-fluid bg-white mt-10 a_main2 '>
+                        <div className='row m-0 h-100 bg-white'>
+                            <div className='col-6 p-0 tbdr dld_banner'></div>
+                            <div className='pt-5 ps-5 col-3 tbdr'>
+                                <h1>Download Snapdeal App Now</h1>
+                                <div className='pt-3'>Fast, Simple & Delightful.</div>
+                                <div>All it takes is 30 seconds to Download.</div>
+                                <button className='btn google' style={{ width: '122px', height: '42px' }}></button>
+                            </div>
+                            <div className='col-3 p-0 dld_banner_right'>
+                            </div>
                         </div>
                     </div>
 
-                    <div className='container-fluid a_main2 '>MAIN</div>
                 </div>
             </Layout>
         )

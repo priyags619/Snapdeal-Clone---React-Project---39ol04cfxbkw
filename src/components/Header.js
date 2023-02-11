@@ -60,7 +60,7 @@ class Header extends Component {
               <div className='row parent'>
 
                 <div className=' btn col-3 m-0 ps-0 ms-0'>
-                  <a href="#" className=''>
+                  <a href="/" className=''>
                     <img className=" mb-3 ms-0" src="https://www.snapdeal.com/img/icons/finalFavicon.ico" height="40px" />
                     <snap className='snapdeal  text-white'>snapdeal</snap>
                   </a>
