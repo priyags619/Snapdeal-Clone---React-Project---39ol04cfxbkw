@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
 import '../styles/App.css';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 // import Home from './pages/Home';
@@ -11,10 +11,23 @@ import Detail from '../Pages/Detail';
 import Search from '../Pages/Search';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+import React from 'react'
+
+function App() {
+  return (
+    <BrowserRouter>
+     <Routes>
+      <Route path="/"  element={<Home/>}/>
+      <Route path="/detail" element={<Detail />}/>
+      <Route path="/search" element={<Search/>}/>
+      <Route path="/cart" element={<Cart/>}/>
+      <Route path="/checkout" element={<Checkout/>}/>
+     </Routes>
+     </BrowserRouter>
+  )
+}
+
+export default App
   /*state = {
     x: ''
   }
@@ -31,19 +44,3 @@ class App extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }*/
-  render() {
-    return (
-      <BrowserRouter>
-     <Routes>
-      <Route path="/"  element={<Home/>}/>
-      <Route path="/detail" element={<Detail />}/>
-      <Route path="/search" element={<Search/>}/>
-      <Route path="/cart" element={<Cart/>}/>
-      <Route path="/checkout" element={<Checkout/>}/>
-     </Routes>
-     </BrowserRouter>
-    )
-  }
-}
-App.propTypes = {}
-export default App

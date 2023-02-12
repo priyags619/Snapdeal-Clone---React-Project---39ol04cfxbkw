@@ -1,77 +1,20 @@
-import React, { Component } from 'react'
+//import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 /**
 * @author
 * @class Header
 **/
+import React from 'react'
 
-class Header extends Component {
-  userData;
+
+
+
+function Header() {
   
-  constructor(props) {
-    super(props)
 
-    this.onChangeName = this.onChangeName.bind(this);
-    this.onChangeEmail = this.onChangeEmail.bind(this);
-    this.onChangePassword= this.onChangePassword.bind(this);
-    this.onSubmit =this.onSubmit.bind(this);
-
-    this.state = {
-      name: '',
-      email: '',
-      Password: ''
-    } 
-  }
-
-//Form Events
-onChangeName(e){
-  this.setState({name : e.target.value})
-}  
-onChangeEmail(e){
-  this.setState({email : e.target.value})
-}
-onChangePassword(e){
-  this.setState({password : e.target.value})
-}
-onSubmit(e){
-  e.preventDefault()
-
-  this.setState({
-    name: '',
-    email: '',
-    password: ''
-  })
-
-}
-componentDidMount(){
-  this.userData = JSON.parse(localStorage.getItem('user'));
-
-  if(localStorage.getItem('user')){
-    this.setState({
-      name: this.userData.name,
-      email: this.userData.email,
-      password: this.userData.password,
-
-    })
-  }else{
-    this.setState({
-      name: '',
-      email: '',
-      password: ''
-    })
-  }
-}
-
-componentWillUpdate(nextProps, nextState){
-  localStorage.setItem('user', JSON.stringify(nextState));
-}
-
-
- 
-  render() {
-    return (
-      <React.Fragment>
+  return (
+    <React.Fragment>
         
         {/* register modal starts */}
         <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -86,16 +29,16 @@ componentWillUpdate(nextProps, nextState){
                 <form className='onSubmit={this.onSubmit'>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="text" className="form-control" value={this.state.name} onChange={this.onChangeName} placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" required/>
+                    <input type="text" className="form-control"  placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" required/>
                   </div>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="email" className="form-control" value={this.state.email} onChange={this.onChangeEmail} placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping" required />
+                    <input type="email" className="form-control"  placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping"  required />
                   </div>
                   <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label"></label>
                     <div className="input-group flex-nowrap">
-                      <input type="password" className="form-control" value={this.state.password} onChange={this.onChangePassword} placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" required />
+                      <input type="password" className="form-control"  placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" required />
                     </div>
                   </div>
 
@@ -368,10 +311,7 @@ componentWillUpdate(nextProps, nextState){
           {/* header bottom ends */}
         </header>
       </React.Fragment>
-    )
-  }
+  )
 }
 
-
-Header.propTypes = {}
 export default Header
