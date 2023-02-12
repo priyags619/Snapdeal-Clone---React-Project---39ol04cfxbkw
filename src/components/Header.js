@@ -7,6 +7,13 @@ import { Link } from 'react-router-dom'
 **/
 
 class Header extends Component {
+
+
+  constructor(props) {
+    super(props)
+  }
+   
+
   state = {}
   render() {
     return (
@@ -22,19 +29,19 @@ class Header extends Component {
               </div>
               <div className="modal-body">
                 {/* Register form starts*/}
-                <form>
+                <form className='onSubmit={this.onSubmit'>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="text" className="form-control" placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" />
+                    <input type="text" className="form-control" value={this.state.name} onChange={this.onChangeName} placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping"/>
                   </div>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="email" className="form-control" placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping" />
+                    <input type="email" className="form-control" value={this.state.email} onChange={this.onChangeEmail} placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping" />
                   </div>
                   <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label"></label>
                     <div className="input-group flex-nowrap">
-                      <input type="password" className="form-control" placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" />
+                      <input type="password" className="form-control" value={this.state.password} onChange={this.onChangePassword} placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" />
                     </div>
                   </div>
 
@@ -83,7 +90,101 @@ class Header extends Component {
         </div>
         {/* login modal ends */}
 
-       
+ {/* cart modal ends */}
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal-content cart-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <table class="table fs-5 table-dark">
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td colspan="2">LOGIN</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td colspan="2">DELIVERY ADDRESS</td>
+      <td >address detail</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">REVIEW ORDER</td>
+      <td>Product deatil</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table ">
+  
+     <thead className='table-info mt-5'>
+    <tr>
+      <th scope="col">item Details</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Delivery Option</th>
+      <th scope="col">Subtotal</th>
+    </tr>
+  </thead>
+  <tbody className='mt-5'>
+    <tr>
+      <th >watch</th>
+      <td className='text-start'>1</td>
+      <td>date</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td><button>remove</button></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Shopping cart item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <table class="table ">
+  
+  <thead className='table-info mt-5'>
+ <tr>
+   <th scope="col">item Details</th>
+   <th scope="col">price</th>
+   <th scope="col">Delivery Option</th>
+   <th scope="col">Subtotal</th>
+ </tr>
+</thead>
+<tbody className='mt-5'>
+ <tr>
+   <th >watch</th>
+   <td className='text-start'>1</td>
+   <td>date</td>
+   <td>234</td>
+ </tr>
+ <tr>
+   <td><button>remove</button></td>
+ </tr>
+</tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">PROCEED TO PAY</button>
+      </div>
+    </div>
+  </div>
+</div>
         <header>
           {/* Header top starts */}
           <div className='a_header_top p-1'>
@@ -173,9 +274,9 @@ class Header extends Component {
                   <ul className="nav a_hbot_nav ">
                     {/* cart starts */}
                     <Link to="/cart">
-                      <li className="nav-item text-white ">
-                        <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" height="20px" width="20px" />
-                         cart
+                      <li className="nav-item text-white fs-6">
+                      <a href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" >
+                        <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" height="25px" width="25px" /> Cart</a>
                       </li>
                     </Link>
                     {/* cart ends */}

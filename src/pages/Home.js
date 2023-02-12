@@ -4,6 +4,11 @@ import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
+
+
+
+
+
 /**
 * @author
 * @class Home
@@ -124,15 +129,20 @@ class Home extends React.Component {
 
                                 </div>
 
+                              
                                 <div className='a_trending_products'>
                                     <h3>Trending Products</h3>
                                     <div id="carouselExampleControls" className="carousel slide carousel_trending" data-bs-ride="carousel">
                                         <div className="carousel-inner text-start">
 
                                             <div className="carousel-item active p-2">
-                                                <div className='row m-0 h-100'>
+                                                <div className='each-product row m-0 h-80'>
                                                     <div className='col tbdr p-0 '>
-                                                        <a className="btn btn-white rounded-0 w-100 h-100">1</a>
+                                                        <a className="btn btn-white rounded-0 w-100 h-100">
+                                                            <img className="p-0" src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80" width="200px" height="200px"/>
+                                                            <h6>ajkbkbkjlj</h6>
+                                                            <h6>jkhnljhln;</h6>
+                                                        </a>
                                                     </div>
                                                     <div className='col tbdr p-0'>
                                                         <a className="btn btn-white rounded-0 w-100 h-100">2</a>
@@ -184,8 +194,7 @@ class Home extends React.Component {
                                                 </div>
                                             </div>
 
-                                        </div>
-                                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span className="visually-hidden">Previous</span>
                                         </button>
@@ -193,6 +202,9 @@ class Home extends React.Component {
                                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span className="visually-hidden">Next</span>
                                         </button>
+
+                                        </div>
+                                       
                                     </div>
                                 </div>
 
@@ -202,9 +214,7 @@ class Home extends React.Component {
                         </div>
 
                     </div>
-                    <div className='text-center mt-200 p-3'>
-                        <button className='btn load btn-dark w-25'>Load More</button>
-                    </div>
+                    
                     <div className='container-fluid bg-white mt-10 a_main2 '>
                         <div className='row m-0 h-100 bg-white'>
                             <div className='col-6 p-0 tbdr dld_banner'></div>

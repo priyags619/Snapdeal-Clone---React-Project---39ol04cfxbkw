@@ -11,7 +11,6 @@ import Detail from '../Pages/Detail';
 import Search from '../Pages/Search';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
-
 class App extends React.Component {
   constructor(props) {
     super(props)
