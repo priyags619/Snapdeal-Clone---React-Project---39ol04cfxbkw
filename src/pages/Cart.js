@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+//import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 
@@ -7,15 +7,12 @@ import Layout from '../components/Layout'
 * @class Cart
 **/
 
-class Cart extends Component {
- state = {}
- render() {
-  return(
-   <div>This is a cart page</div>
-    )
-   }
- }
+import React from 'react'
 
+function Cart() {
+  return (
+    <div>cart</div>
+  )
+}
 
-Cart.propTypes = {}
 export default Cart

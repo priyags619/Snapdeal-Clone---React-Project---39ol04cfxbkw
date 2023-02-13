@@ -8,7 +8,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 // import Checkout from './pages/Checkout';
 import Home from '../Pages/Home';
 import Detail from '../Pages/Detail';
-import Search from '../Pages/Search';
+import Search from '../pages/login';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
 import React from 'react'

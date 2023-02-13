@@ -1,13 +1,13 @@
 //import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import mala from '../assets/images/mala.jpg'
 
 
 
-
-import React from 'react'
 
 function Home() {
   return (
@@ -142,8 +142,11 @@ function Home() {
                                                 <img src="https://assets.ajio.com/medias/sys_master/root/20220817/aEGF/62fc174baeb26917617922df/-288Wx360H-464818638-black-MODEL.jpg" width="200px" height="200px"/>
                                             </a>
                                         </div>
+                                       
                                         <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">3</a>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={mala} style={{width:"100%"}}/>
+                                            </div>
                                         </div>
                                         <div className='col tbdr p-0'>
                                             <a className="btn btn-white rounded-0 w-100 h-100">4</a>

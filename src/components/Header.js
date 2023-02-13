@@ -1,18 +1,54 @@
 //import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import login from '../pages/login'
+import React, { useState } from 'react'
 /**
 * @author
 * @class Header
 **/
-import React from 'react'
+//import React from 'react'
 
-
-
-
-function Header() {
+function Header () {
+  const[inpval,setInpval] = useState({
+    name: "",
+    email: "",
+    password: ""
+  })
+  const [data,setData] = useState([]);
+  console.log(inpval);
   
+const getdata = (e) =>{
+//console.log(e.target.value)
 
+const{value,name} = e.target;
+//console.log(value,name)
+
+setInpval(() => {
+  return{
+    ...inpval,
+    [name]:value
+  }
+})
+}
+
+ const addData = (e) => {
+  e.preventDefault();
+
+  const { name, email, password } = inpval;
+
+  if(name ===""){
+     alert("name feild is required")
+    }else if(email === ""){
+      alert("email feild is required")
+  }else if(password === ""){
+    alert("password feild is required")
+}else{
+  alert("Registered Successfully!")
+ }
+ localStorage.setItem("useRegister",JSON.stringify([...data,inpval]));
+ 
+ }
   return (
     <React.Fragment>
         
@@ -26,27 +62,26 @@ function Header() {
               </div>
               <div className="modal-body">
                 {/* Register form starts*/}
-                <form className='onSubmit={this.onSubmit'>
+                <form className='onSubmit={this.onSubmit}' autoComplete='off'>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="text" className="form-control"  placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" required/>
+                    <input type="text" className="form-control" onChange={getdata} name='name' placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" />
                   </div>
                   <label for="exampleFormControlInput1" className="form-label"></label>
                   <div className="input-group flex-nowrap">
-                    <input type="email" className="form-control"  placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping"  required />
+                    <input type="email" className="form-control" onChange={getdata} name='email' placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping"  />
                   </div>
                   <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label"></label>
                     <div className="input-group flex-nowrap">
-                      <input type="password" className="form-control"  placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" required />
+                      <input type="password" className="form-control" onChange={getdata} name='password' placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping"  />
                     </div>
                   </div>
 
-                  <button type="submit" className="btn mt-3 mb-2 ms-3 btn-success">Submit</button>
+                  <button type="submit" className="btn mt-3 mb-2 ms-3 btn-success" onClick={addData} >Submit</button>
                 </form>
               </div>
 
-              <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Close</button>
 
             </div>
           </div>
@@ -283,19 +318,16 @@ function Header() {
                       <a className="a_b1 " href="#"> <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" height="25px" width="25px" /> Sign in</a>
                       {/* sign-in dropdown starts*/}
                       <ul className='sign-in-list border-bottom'>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Your Account</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Your Orders</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Shortlist</a>
-                        </li>
+                        
                         <li className='nav-item signin_bottom'>
-                          <div className='new_user'>If you are new user</div>
+                          <div className='new_user mt-5'>If you are new user</div>
                           <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="btn bg-success me-4 mt-2" href="#">Register</a>
+                          <Link to="/login">
                           <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" className='btn btn-danger me-4 mt-5'>Login</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <button className="btn btn-danger me-2 mt-5 ms-4">Logout</button>
                         </li>
                       </ul>
                       {/* sign-in dropdown ends */}
