@@ -7,19 +7,22 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 // import Cart from './pages/Cart';
 // import Checkout from './pages/Checkout';
 import Home from '../Pages/Home';
-import Detail from '../Pages/Detail';
-import Search from '../pages/login';
+import Register from '../pages/Register';
+import Login from '../pages/Login';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
-import React from 'react'
+
+import React, {useState} from 'react'
+
 
 function App() {
+  const [authenticated,setAuthenticated ] = useState(false)
   return (
     <BrowserRouter>
      <Routes>
       <Route path="/"  element={<Home/>}/>
-      <Route path="/detail" element={<Detail />}/>
-      <Route path="/search" element={<Search/>}/>
+      <Route path="/register" element={<Register />}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
      </Routes>

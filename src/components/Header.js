@@ -1,8 +1,9 @@
 //import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import login from '../pages/login'
+import Login from '../pages/Login'
 import React, { useState } from 'react'
+import Register from '../pages/Register'
 /**
 * @author
 * @class Header
@@ -10,116 +11,12 @@ import React, { useState } from 'react'
 //import React from 'react'
 
 function Header () {
-  const[inpval,setInpval] = useState({
-    name: "",
-    email: "",
-    password: ""
-  })
-  const [data,setData] = useState([]);
-  console.log(inpval);
-  
-const getdata = (e) =>{
-//console.log(e.target.value)
-
-const{value,name} = e.target;
-//console.log(value,name)
-
-setInpval(() => {
-  return{
-    ...inpval,
-    [name]:value
-  }
-})
-}
-
- const addData = (e) => {
-  e.preventDefault();
-
-  const { name, email, password } = inpval;
-
-  if(name ===""){
-     alert("name feild is required")
-    }else if(email === ""){
-      alert("email feild is required")
-  }else if(password === ""){
-    alert("password feild is required")
-}else{
-  alert("Registered Successfully!")
- }
- localStorage.setItem("useRegister",JSON.stringify([...data,inpval]));
- 
- }
-  return (
+  return(
     <React.Fragment>
-        
-        {/* register modal starts */}
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="staticBackdropLabel">Register Now</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-              </div>
-              <div className="modal-body">
-                {/* Register form starts*/}
-                <form className='onSubmit={this.onSubmit}' autoComplete='off'>
-                  <label for="exampleFormControlInput1" className="form-label"></label>
-                  <div className="input-group flex-nowrap">
-                    <input type="text" className="form-control" onChange={getdata} name='name' placeholder="Enter Your Name" aria-label="Username" aria-describedby="addon-wrapping" />
-                  </div>
-                  <label for="exampleFormControlInput1" className="form-label"></label>
-                  <div className="input-group flex-nowrap">
-                    <input type="email" className="form-control" onChange={getdata} name='email' placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping"  />
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label"></label>
-                    <div className="input-group flex-nowrap">
-                      <input type="password" className="form-control" onChange={getdata} name='password' placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping"  />
-                    </div>
-                  </div>
-
-                  <button type="submit" className="btn mt-3 mb-2 ms-3 btn-success" onClick={addData} >Submit</button>
-                </form>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        {/* register modal ends */}
+    
 
         {/* Login modal starts */}
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Login</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-
-                {/* Login form starts*/}
-                <form>
-                  <label for="exampleFormControlInput1" className="form-label"></label>
-                  <div className="input-group flex-nowrap">
-                    <input type="email" className="form-control" placeholder="Enter Your Email" aria-label="Email" aria-describedby="addon-wrapping" required/>
-                  </div>
-                  <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label"></label>
-                    <div className="input-group flex-nowrap">
-                      <input type="password" className="form-control" placeholder="Enter Your Password" aria-label="Password" aria-describedby="addon-wrapping" required/>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-success">Login</button>
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         {/* login modal ends */}
 
  {/* cart modal ends */}
@@ -320,12 +217,15 @@ setInpval(() => {
                       <ul className='sign-in-list border-bottom'>
                         
                         <li className='nav-item signin_bottom'>
-                          <div className='new_user mt-5'>If you are new user</div>
-                          <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="btn bg-success me-4 mt-2" href="#">Register</a>
-                          <Link to="/login">
-                          <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" className='btn btn-danger me-4 mt-5'>Login</a>
+                          <div className='new_user mt-5'><h5>If you are new 
+                            <div className="text-center me-4">user</div></h5></div>
+                          </li>
+                          <Link to="/register" className='btn btn-success me-4 mt-3'>Register</Link>
+                          
+                          
+                          <Link to="/login"  className='btn btn-danger me-4 mt-3'>Login
                           </Link>
-                        </li>
+                        
                         <li>
                           <button className="btn btn-danger me-2 mt-5 ms-4">Logout</button>
                         </li>

@@ -259,10 +259,22 @@ a{text-decoration:none;}
     padding-right: 9px;
     background: #7f7171;
     color: #777;
-    
-
-    
 }
+.login-wrapper {
+    width:80%;
+    margin: 0 auto;
+    height:100vh;
+    display : flex;
+    align-items:center;
+    justify-content : center;
+  }
+.register-page{
+    margin-top: 180px;
+    width:50%;
+    background-color: white;
+    height: 50%;
+}
+
 .next{
     margin-top: -5px;
     background: #d9bbbb;

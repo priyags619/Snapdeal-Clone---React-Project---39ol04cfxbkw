@@ -5,6 +5,16 @@ import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import mala from '../assets/images/mala.jpg'
+import watch from '../assets/images/watch.jpg'
+import wallet from '../assets/images/wallet.jpg'
+import socks from '../assets/images/socks.jpg'
+import chopper from '../assets/images/chopper.jpg'
+import chappal from '../assets/images/chappal.jpg'
+import lighter from '../assets/images/lighter.jpg'
+import tshirt from '../assets/images/tshirt.jpg'
+
+
+
 
 
 
@@ -131,16 +141,16 @@ function Home() {
                                 <div className="carousel-item active p-2">
                                     <div className='each-product row m-0 h-100'>
                                         <div className='col tbdr p-0 '>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
                                                 <img className="p-0 m-0 " src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80" width="200px" height="200px"/>
                                                 <h6>ajkbkbkjlj</h6>
                                                 <h6>jkhnljhln;</h6>
-                                            </a>
+                                            </div>
                                         </div>
                                         <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">
-                                                <img src="https://assets.ajio.com/medias/sys_master/root/20220817/aEGF/62fc174baeb26917617922df/-288Wx360H-464818638-black-MODEL.jpg" width="200px" height="200px"/>
-                                            </a>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={tshirt} style={{width:"100%"}}/>
+                                            </div>
                                         </div>
                                        
                                         <div className='col tbdr p-0'>
