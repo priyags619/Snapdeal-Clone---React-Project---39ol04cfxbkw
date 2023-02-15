@@ -17,6 +17,8 @@ import mala from '../assets/images/mala.jpg'
 import shoe from '../assets/images/shoe.jpg'
 import { Link } from 'react-router-dom'
 import CartHome from '../pages/CartHome'
+import MensFashionHome from './MensFashionHome'
+
 
 
 function Home() {
@@ -53,7 +55,7 @@ function Home() {
                     <h6 className='mt-4 fs-6'>MORE CATEGORIES</h6>
                     <ul class=" nav flex-column asidenav asidenav2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Men'sFashions</a>
+                            <Link to="/MensFashionHome">Men'sFashions</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">

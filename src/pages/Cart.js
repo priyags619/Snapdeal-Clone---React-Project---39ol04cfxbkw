@@ -1,6 +1,7 @@
 //import React, { Component } from 'react'
 import React from 'react'
 import { useCart } from "react-use-cart";
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   const { isEmpty,
@@ -56,6 +57,8 @@ const Cart = () => {
         onClick={() => emptyCart()}
         >Click Cart</button>
         <button className="btn btn-primary m-2">Buy Now</button>
+        <Link to="/" className="btn btn-primary m-2">Home</Link>
+
       </div>
     </div>
     </scetion>

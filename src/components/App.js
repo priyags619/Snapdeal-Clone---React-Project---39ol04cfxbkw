@@ -8,6 +8,7 @@ import Login from '../pages/Login';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
 import CartHome from '../pages/CartHome';
+import MensFashionHome from '../pages/MensFashionHome';
 //import { CartProvider } from 'react-use-cart';
 
 
@@ -26,6 +27,8 @@ function App() {
       {/* <CartProvider> */}
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/CartHome" element={<CartHome/>}/> 
+      <Route path="/MensFashionHome" element={<MensFashionHome/>}/> 
+
       {/* </CartProvider> */}
 
       </Routes>
