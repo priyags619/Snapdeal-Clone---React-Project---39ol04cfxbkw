@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import mala from '../assets/images/mala.jpg'
+import dress from '../assets/images/dress.jpg'
 import watch from '../assets/images/watch.jpg'
 import wallet from '../assets/images/wallet.jpg'
 import socks from '../assets/images/socks.jpg'
@@ -12,11 +12,11 @@ import chopper from '../assets/images/chopper.jpg'
 import chappal from '../assets/images/chappal.jpg'
 import lighter from '../assets/images/lighter.jpg'
 import tshirt from '../assets/images/tshirt.jpg'
-
-
-
-
-
+import saree from '../assets/images/saree.jpg'
+import mala from '../assets/images/mala.jpg'
+import shoe from '../assets/images/shoe.jpg'
+import { Link } from 'react-router-dom'
+import CartHome from '../pages/CartHome'
 
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
                     <h6 className='fs-6'>TOP CATEGORIES</h6>
                     <ul class=" nav flex-column asidenav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Electronics</a>
+                            <Link to="/CartHome">Electronics</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
@@ -133,18 +133,50 @@ function Home() {
                     </div>
 
                   
-                    <div className='a_trending_products'>
+                    <div className='a_trending_products '>
                         <h3>Trending Products</h3>
                         <div id="carouselExampleControls" className="carousel slide carousel_trending" data-bs-ride="carousel">
-                            <div className="carousel-inner text-start">
+                            <div className="carousel-inner text-start ">
 
                                 <div className="carousel-item active p-2">
                                     <div className='each-product row m-0 h-100'>
                                         <div className='col tbdr p-0 '>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
-                                                <img className="p-0 m-0 " src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80" width="200px" height="200px"/>
-                                                <h6>ajkbkbkjlj</h6>
-                                                <h6>jkhnljhln;</h6>
+                                            <img src={watch} style={{width:"100%"}}/>
+                                                <p>bjbjlblk<div>jlbljb</div></p>
+                                            </div>
+
+                                        </div>
+                                        <div className='col tbdr p-0'>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={mala} style={{width:"100%"}}/>
+                                            <p>bjbjlblk<div>jlbljb</div></p>
+                                            </div>
+                                        </div>
+                                       
+                                        <div className='col tbdr p-0'>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={dress} style={{width:"100%"}}/>
+                                            </div>
+                                        </div>
+                                        <div className='col tbdr p-0'>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={wallet} style={{width:"100%"}}/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="carousel-item p-2">
+                                    <div className='row m-0 h-100'>
+                                        <div className='col tbdr p-0'>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={chopper} style={{width:"100%"}}/>
+                                            </div>
+                                        </div>
+                                        <div className='col tbdr p-0'>
+                                            <div className="btn btn-white rounded-0 w-100 h-100">
+                                            <img src={shoe} style={{width:"100%", height:"70%"}}/>
                                             </div>
                                         </div>
                                         <div className='col tbdr p-0'>
@@ -152,55 +184,15 @@ function Home() {
                                             <img src={tshirt} style={{width:"100%"}}/>
                                             </div>
                                         </div>
-                                       
                                         <div className='col tbdr p-0'>
-                                            <div className="btn btn-white rounded-0 w-100 h-100">
-                                            <img src={mala} style={{width:"100%"}}/>
-                                            </div>
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">4</a>
+                                           <div className="btn btn-white rounded-0 w-100 h-100">
+                                           <img src={saree} style={{width:"100%"}}/>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="carousel-item p-2">
-                                    <div className='row m-0 h-100'>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">5</a>
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">6</a>
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">7</a>
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                           <a className="btn btn-white rounded-0 w-100 h-100">8</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="carousel-item p-2">
-                                    <div className='row m-0 h-100'>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">9</a>
-
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">10</a>
-
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">11</a>
-
-                                        </div>
-                                        <div className='col tbdr p-0'>
-                                            <a className="btn btn-white rounded-0 w-100 h-100">12</a>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -223,7 +215,7 @@ function Home() {
 
         </div>
         
-        <div className='container-fluid bg-white mt-10 a_main2 '>
+        <div className='container-fluid bg-white mt-5 a_main2 '>
             <div className='row m-0 h-100 bg-white'>
                 <div className='col-6 p-0 tbdr dld_banner'></div>
                 <div className='pt-5 ps-5 col-3 tbdr'>

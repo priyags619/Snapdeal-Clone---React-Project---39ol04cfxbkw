@@ -1,18 +1,16 @@
 //import React, { Component } from 'react';
+import React, {useState} from 'react'
 import '../styles/App.css';
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-// import Home from './pages/Home';
-// import Detail from './pages/Detail';
-// import Search from './pages/Search';
-// import Cart from './pages/Cart';
-// import Checkout from './pages/Checkout';
+import { BrowserRouter,Routes,CartProvider,Route } from "react-router-dom";
 import Home from '../Pages/Home';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
+import CartHome from '../pages/CartHome';
+//import { CartProvider } from 'react-use-cart';
 
-import React, {useState} from 'react'
+
 
 
 function App() {
@@ -23,10 +21,16 @@ function App() {
       <Route path="/"  element={<Home/>}/>
       <Route path="/register" element={<Register />}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/cart" element={<Cart/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
-     </Routes>
+      
+      {/* <CartProvider>
+      <Route path="/cart" element={<Cart/>}/>
+      <Route path="/CartHome" element={<CartHome/>}/> 
+      </CartProvider> */}
+
+      </Routes>
      </BrowserRouter>
+
   )
 }
 

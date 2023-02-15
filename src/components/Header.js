@@ -204,8 +204,7 @@ function Header () {
                     {/* cart starts */}
                     <Link to="/cart">
                       <li className="nav-item text-white fs-6">
-                      <a href="#" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" >
-                        <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" height="25px" width="25px" /> Cart</a>
+                      <Link to="/cart">Cart</Link>
                       </li>
                     </Link>
                     {/* cart ends */}
@@ -220,7 +219,7 @@ function Header () {
                           <div className='new_user mt-5'><h5>If you are new 
                             <div className="text-center me-4">user</div></h5></div>
                           </li>
-                          <Link to="/register" className='btn btn-success me-4 mt-3'>Register</Link>
+                          <Link to="/register" className='btn btn-success me-4 mt-3'>SignUp</Link>
                           
                           
                           <Link to="/login"  className='btn btn-danger me-4 mt-3'>Login

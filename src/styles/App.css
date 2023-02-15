@@ -269,8 +269,9 @@ a{text-decoration:none;}
     justify-content : center;
   }
 .register-page{
-    margin-top: 180px;
+    margin-top: 80px;
     width:50%;
+    margin-left: 25%;
     background-color: white;
     height: 50%;
 }
@@ -325,7 +326,8 @@ padding: 20px !important;
 .a_main2{
   
     height: 455px;
-    margin-top: 480px;
+    margin-top: 500px;
+    
    
 }
 footer{
