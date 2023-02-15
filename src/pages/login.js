@@ -2,9 +2,9 @@ import React,{ useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 
-function getUserDate(){
-  const userDate = localStorage.getItem('userData');
-  if(userDate) return JSON.parse(localStorage.getItem('userData'));
+function getUserData(){
+  const userData = localStorage.getItem('userData');
+  if(userData) return JSON.parse(localStorage.getItem('userData'));
   else return [];
 }
 
@@ -14,7 +14,7 @@ function Login() {
 
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
-  const [userData , setUserData] = useState(getUserDate());  
+  const [userData , setUserData] = useState(getUserData());  
 
 
   function handleLogin(e){
@@ -35,7 +35,7 @@ function Login() {
 
      <div className="container card">
      <div className="heading text-center">
-        <h1  className="text-danger"style={{fontFamily :"Anton" , letterSpacing : "1px"}}>Sign-Up</h1>
+        <h1  className="text-danger"style={{fontFamily :"Anton" , letterSpacing : "1px"}}>Login</h1>
      </div>
      <div className="login-container container my-5  row">
        <div className="col-md-12 pt-3">

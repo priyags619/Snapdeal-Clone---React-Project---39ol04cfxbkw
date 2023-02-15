@@ -8,4 +8,7 @@ import { CartProvider } from "react-use-cart";
 
 
 ReactDOM.render(
-<App />, document.getElementById("root"));
+    <CartProvider>
+    <App />
+</CartProvider>,
+document.getElementById("root"));

@@ -1,7 +1,7 @@
 //import React, { Component } from 'react';
 import React, {useState} from 'react'
 import '../styles/App.css';
-import { BrowserRouter,Routes,CartProvider,Route } from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from '../Pages/Home';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
@@ -23,10 +23,10 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
       
-      {/* <CartProvider>
+      {/* <CartProvider> */}
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/CartHome" element={<CartHome/>}/> 
-      </CartProvider> */}
+      {/* </CartProvider> */}
 
       </Routes>
      </BrowserRouter>

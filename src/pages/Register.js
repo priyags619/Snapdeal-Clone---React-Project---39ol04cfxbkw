@@ -39,7 +39,7 @@ function handleSignUp(e){
     <div className="wrapper ">
      <div className="container card">
      <div className="heading text-center">
-        <h2 style={{fontFamily :"Anton" , letterSpacing : "1px"}} className="text-danger">Login</h2>
+        <h2 style={{fontFamily :"Anton" , letterSpacing : "1px"}} className="text-danger">Sign-Up</h2>
      </div>
 
      <div className="login-container container my-5  row">
