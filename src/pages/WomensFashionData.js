@@ -1,8 +1,9 @@
 import React from 'react'
-import dress from '../assets/images/Womensfashion/dress.jpg'
-import Embroidarycocktaildress from '../assets/images/Womensfashion/Embroidarycocktaildress.jpg'
-import lipstick from '../assets/images/Womensfashion/lipstick.jpg'
-import formals from '../assets/images/Womensfashion/formals.jpg'
+import dress from '../assets/images/dress.jpg'
+import gown from '../assets/images/gown.jpg'
+import lipstick from '../assets/images/lipstick.jpg'
+import formals from '../assets/images/formals.jpg'
+
 const WomensFashionData = {
     productData:[
         {
@@ -15,8 +16,8 @@ const WomensFashionData = {
         },
         {
             id:2,   
-            img: Embroidarycocktaildress,
-            title: 'Embroidarycocktaildress',
+            img: gown,
+            title: 'gown',
             desc: '',
             price: 879,
             rating: 4.2

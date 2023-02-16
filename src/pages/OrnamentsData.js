@@ -1,9 +1,10 @@
 import React from 'react'
-import earrings from '../assets/images/ornaments/earrings.jpg'
+import anklet from '../assets/images/anklet.jpg'
 //import Artificiallypendantjwellery from '../assets/images/ornaments/Artificiallypendantjwellery.jpg'
-import Bestrealgoldanklet from '../assets/images/ornaments/Bestrealgoldanklet.jpg'
+import chainset from '../assets/images/chainset.jpg'
 //import redearrings from '../assets/images/ornaments/redearrings.jpg'
-import SetofRings from '../assets/images/ornaments/SetofRings.jpg'
+import SetofRings from '../assets/images/SetofRings.jpg'
+import redstone from '../assets/images/redstone.jpg'
 
 
 
@@ -11,30 +12,36 @@ const OrnamentsData= {
     productData:[
         {
             id:1,   
-            img: earrings,
-            title: 'earrings',
+            img: anklet,
+            title: 'anklet',
             desc: '',
             price: 879,
             rating: 4.2
         },
-       
         {
-            id:3,   
-            img: Bestrealgoldanklet,
-            title: 'Bestrealgoldanklet',
+            id:2,   
+            img: chainset,
+            title: 'chainset',
             desc: '',
             price: 879,
             rating: 4.5
         },
-       
         {
-            id:5,   
+            id:3,   
             img: SetofRings,
             title: 'SetofRings',
             desc: '',
             price: 879,
             rating: 4.5
-        }
+        },
+        {
+            id:4,   
+            img: redstone,
+            title: 'redstone',
+            desc: '',
+            price: 879,
+            rating: 4.5
+        },
     ],
 }; 
 

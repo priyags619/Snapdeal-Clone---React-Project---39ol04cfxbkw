@@ -1,10 +1,10 @@
 import React from 'react'
-import mala from '../assets/images/Mensfashion/mala.jpg'
-import wallet from '../assets/images/Mensfashion/wallet.jpg'
-import watch from '../assets/images/Mensfashion/watch.jpg'
-import tshirt from '../assets/images/Mensfashion/tshirt.jpg'
-import shoe from '../assets/images/Mensfashion/shoe.jpg'
-import chappal from '../assets/images/Mensfashion/chappal.jpg'
+import mala from '../assets/images/mala.jpg'
+import wallet from '../assets/images/wallet.jpg'
+import watch from '../assets/images/watch.jpg'
+import tshirt from '../assets/images/tshirt.jpg'
+import shoe from '../assets/images/shoe.jpg'
+import chappal from '../assets/images/chappal.jpg'
 
 const MensFashionData= {
     productData:[
