@@ -3,9 +3,6 @@ import {useState } from "react";
 
 
 function Checkout() {
-
-
-
   const [address , setAddress] = useState("");
   function handlePayment(e){
     e.preventDefault();

@@ -1,10 +1,4 @@
-//import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
-/**
-* @author
-* @class Footer
-**/
 import React from 'react'
 
 function Footer() {

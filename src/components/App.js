@@ -2,11 +2,11 @@
 import React, {useState} from 'react'
 import '../styles/App.css';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Home from '../Pages/Home';
+import Home from '../pages/Home';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
-import Cart from '../Pages/Cart';
-import Checkout from '../Pages/Checkout';
+import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
 import CartHome from '../pages/CartHome';
 import Menhome from '../pages/Menhome';
 import Womenhome from '../pages/Womenhome';
