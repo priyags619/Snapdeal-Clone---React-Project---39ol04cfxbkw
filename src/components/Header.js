@@ -6,13 +6,7 @@ import Register from "../pages/Register";
 import Logout from "../pages/Logout";
 
 function Header() {
-  const [loggedin, setLoggedIn] = useState(
-    localStorage.getItem("authenticated" ) || false
-  );
-  const logOut = () => {
-    console.log("Welcome");
-  };
-  console.log(loggedin);
+  
   return (
     <React.Fragment>
       <div
@@ -281,8 +275,7 @@ function Header() {
 
                   {/* sign-in starts */}
                     
-                  {loggedin == true ? 
-                  <Logout/>:
+               
 
                     <li className="nav-item">
                       <a className="a_b1 " href="#">
@@ -314,12 +307,12 @@ function Header() {
                         <Link to="/login" className="btn btn-danger me-4 mt-3">
                           Login
                         </Link>
-
+                        <li className="btn btn-success mt-5 ps-5"> logout</li>
                       </ul>
                       
                       {/* sign-in dropdown ends */}
                     </li>
-                    }
+                    
                     
                   {/* sign-in ends */}
                 </ul>

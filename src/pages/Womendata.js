@@ -4,7 +4,7 @@ import gown from '../assets/images/gown.jpg'
 import lipstick from '../assets/images/lipstick.jpg'
 import formals from '../assets/images/formals.jpg'
 
-const WomensFashionData = {
+const Womendata = {
     productData:[
         {
             id:1,   
@@ -42,4 +42,4 @@ const WomensFashionData = {
     ],
 }; 
 
-export default WomensFashionData;
+export default Womendata;

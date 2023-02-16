@@ -19,9 +19,9 @@ import code from '../assets/images/code.jpg'
 import rightbarimage from '../assets/images/rightbarimage.jpg'
 import { Link } from 'react-router-dom'
 import CartHome from '../pages/CartHome'
-import MensFashionHome from './MensFashionHome'
-import WomensFashionHome from './WomensFashionHome'
-import OrnamentsHome from './OrnamentsHome'
+import Menhome from '../pages/Menhome'
+import Womenhome from '../pages/Womenhome'
+import Ornamenthome from '../pages/Ornamenthome'
 
 
 
@@ -42,15 +42,15 @@ function Home() {
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
-                            <Link to="/MensFashionHome">Mens's Fashions</Link>
+                            <Link to="/Menhome">Mens's Fashions</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
                         <li class="nav-item">
-                            <Link to="/WomensFashionHome">Women's Fashion</Link>
+                            <Link to="/Womenhome">Women's Fashion</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>C</div>
                         </li>
                         <li class="nav-item">
-                            <Link to="/OrnamentsHome">Ornaments</Link>
+                            <Link to="/Ornamenthome">Ornaments</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>D</div>
                         </li>
                         {/* <li class="nav-item">
@@ -65,7 +65,7 @@ function Home() {
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
-                            <Link to="/WomensFashionHome">Women's Fashions</Link>
+                        <a className="mt-6">Women'sFashions</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
                         <li class="nav-item">

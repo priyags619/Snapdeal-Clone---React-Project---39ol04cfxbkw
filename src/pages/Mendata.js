@@ -6,7 +6,7 @@ import tshirt from '../assets/images/tshirt.jpg'
 import shoe from '../assets/images/shoe.jpg'
 import chappal from '../assets/images/chappal.jpg'
 
-const MensFashionData= {
+const Mendata= {
     productData:[
         {
             id:1,   
@@ -59,4 +59,4 @@ const MensFashionData= {
     ],
 }; 
 
-export default MensFashionData;
+export default Mendata;

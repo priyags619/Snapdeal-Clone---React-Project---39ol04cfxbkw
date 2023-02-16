@@ -8,7 +8,7 @@ import redstone from '../assets/images/redstone.jpg'
 
 
 
-const OrnamentsData= {
+const Ornamentdata= {
     productData:[
         {
             id:1,   
@@ -45,4 +45,4 @@ const OrnamentsData= {
     ],
 }; 
 
-export default OrnamentsData;
+export default Ornamentdata;

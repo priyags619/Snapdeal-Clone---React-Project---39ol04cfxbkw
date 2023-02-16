@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import WomensFashionData from './WomensFashionData';
-import WomensFashionItemCard from './WomensFashionItemCard';
+import Ornamentdata from './Ornamentdata';
+import Ornamentcard from './Ornamentcard';
 
-const WomensFashionHome = () => {
-    console.log(WomensFashionData.productData)
+const Ornamenthome = () => {
+    console.log(Ornamentdata.productData)
     return (
         <>
             <h1 className="text-center mt-3">All items</h1>
             <section className=" container">
                 <div className="row ">
-                    {WomensFashionData.productData.map((item, index)=>{
+                    {Ornamentdata.productData.map((item, index)=>{
                       return(
-                        <WomensFashionItemCard img={item.img} 
+                        <Ornamentcard img={item.img} 
                         title={item.title} 
                         desc={item.desc} 
                         price={item.price} 
@@ -29,4 +29,4 @@ const WomensFashionHome = () => {
     )
 }
 
-export default WomensFashionHome
+export default Ornamenthome

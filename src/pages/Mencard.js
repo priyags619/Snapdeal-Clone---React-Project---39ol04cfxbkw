@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCart } from "react-use-cart";
 
-const WomensFashionItemCard =(props)=> {
+const Mencard =(props)=> {
     const { addItem } = useCart();
   return (
     <div className='col-11 col-md-6 col-lg-3 mx-0 mb-4'>
@@ -21,4 +21,4 @@ const WomensFashionItemCard =(props)=> {
   )
 }
 
-export default WomensFashionItemCard
+export default Mencard

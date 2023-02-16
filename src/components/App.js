@@ -8,9 +8,9 @@ import Login from '../pages/Login';
 import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
 import CartHome from '../pages/CartHome';
-import MensFashionHome from '../pages/MensFashionHome';
-import WomensFashionHome from '../pages/WomensFashionHome';
-import OrnamentsHome from '../Pages/OrnamentsHome';
+import Menhome from '../pages/Menhome';
+import Womenhome from '../pages/Womenhome';
+import Ornamenthome from '../pages/Ornamenthome';
 
 //import { CartProvider } from 'react-use-cart';
 
@@ -27,9 +27,9 @@ function App() {
 
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/CartHome" element={<CartHome/>}/> 
-      <Route path="/MensFashionHome" element={<MensFashionHome/>}/> 
-      <Route path="/WomensFashionHome" element={<WomensFashionHome/>}/> 
-      <Route path="/OrnamentsHome" element={<OrnamentsHome/>}/> 
+      <Route path="/Menhome" element={<Menhome/>}/> 
+      <Route path="/Womenhome" element={<Womenhome/>}/> 
+      <Route path="/Ornamenthome" element={<Ornamenthome/>}/> 
 
 
 
