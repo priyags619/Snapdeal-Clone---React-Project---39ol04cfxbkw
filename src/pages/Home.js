@@ -4,22 +4,25 @@ import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import dress from '../assets/images/dress.jpg'
-import watch from '../assets/images/watch.jpg'
-import wallet from '../assets/images/wallet.jpg'
+import dress from '../assets/images/Womensfashion/dress.jpg'
+import watch from '../assets/images/Mensfashion/watch.jpg'
+import wallet from '../assets/images/Mensfashion/wallet.jpg'
 import socks from '../assets/images/socks.jpg'
 import chopper from '../assets/images/chopper.jpg'
-import chappal from '../assets/images/chappal.jpg'
+import chappal from '../assets/images/Mensfashion/chappal.jpg'
 import lighter from '../assets/images/lighter.jpg'
-import tshirt from '../assets/images/tshirt.jpg'
-import saree from '../assets/images/saree.jpg'
-import mala from '../assets/images/mala.jpg'
-import shoe from '../assets/images/shoe.jpg'
+import tshirt from '../assets/images/Mensfashion/tshirt.jpg'
+import saree from '../assets/images/Womensfashion/saree.jpg'
+import mala from '../assets/images/Mensfashion/mala.jpg'
+import shoe from '../assets/images/Mensfashion/shoe.jpg'
 import code from '../assets/images/code.jpg'
 import rightbarimage from '../assets/images/rightbarimage.jpg'
 import { Link } from 'react-router-dom'
 import CartHome from '../pages/CartHome'
 import MensFashionHome from './MensFashionHome'
+import WomensFashionHome from './WomensFashionHome'
+import OrnamentsHome from './OrnamentsHome'
+
 
 
 
@@ -47,7 +50,7 @@ function Home() {
                             <div className='position-absolute top-0 asidenav_rightbox'>C</div>
                         </li>
                         <li class="nav-item">
-                            <Link to="/OrnamentHome">Ornaments</Link>
+                            <Link to="/OrnamentsHome">Ornaments</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>D</div>
                         </li>
                         {/* <li class="nav-item">
@@ -62,7 +65,7 @@ function Home() {
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
-                            <a className="mt-6">Women's Fashions</a>
+                            <Link to="/WomensFashionHome">Women's Fashions</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
                         <li class="nav-item">

@@ -17,7 +17,7 @@ const Cart = () => {
   return (
     <scetion className="py-4 container">
     <div className='row justify-content-center'>
-      <div className='col-12'>
+      <div className='col-10'>
         <h5> Cart ({ totalUniqueItems })total Items: ({totalItems})</h5>
         <tabel className = "table table-light table-hover m-0">
           <tbody>
@@ -49,7 +49,7 @@ const Cart = () => {
         </tabel>
       </div>
       <div className='col-auto ms-auto'>
-        <h2>Total Price: Rs {cartTotal}</h2>
+        <h2 >Total Price: Rs {cartTotal}</h2>
       </div>
       <div className='col-auto'>
         <button 

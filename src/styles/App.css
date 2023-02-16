@@ -224,7 +224,7 @@ a{text-decoration:none;}
     display: none;
 }
 .asidenav > li:hover div{
-    display: block;
+    display: none;
 }
 .asidenav2 a{
     padding: 5px 10px 5px 10px !important;
@@ -268,12 +268,10 @@ a{text-decoration:none;}
     align-items:center;
     justify-content : center;
   }
-.register-page{
+  .register{
     margin-top: 80px;
-    width:50%;
-    margin-left: 25%;
-    background-color: white;
-    height: 50%;
+   width: 1090px;
+   margin-left: 10%;
 }
 
 .next{

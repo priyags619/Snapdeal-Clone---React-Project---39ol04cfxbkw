@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom'
 import Login from '../pages/Login'
 import React, { useState } from 'react'
 import Register from '../pages/Register'
-/**
-* @author
-* @class Header
-**/
-//import React from 'react'
 
 function Header () {
+   const[loggedin,setLoggedIn] = useState(localStorage.getItem('authenticated') || false)
+  const logOut = () =>{
+    console.log("Welcome")
+  }
   return(
     <React.Fragment>
     
@@ -172,16 +171,16 @@ function Header () {
                             <img src="https://cdn1.vectorstock.com/i/1000x1000/57/30/single-analytic-icon-increasing-graph-vector-29565730.jpg" height="20px" width="20px" /> Trending Searches</h5>
                           <ul className="list-unstyled ">
                             <li className="nav-item">
-                              <a className="nav-link" href="#">Shoes</a>
+                              <a className="nav-link" href="#">Electronic Devices</a>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link" href="#">Sarees</a>
+                              <a className="nav-link" href="#">Men's Fashion</a>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link" href="#">Plazzo Pant</a>
+                              <a className="nav-link" href="#">Women's Fashion</a>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link " href="#" >Frocks</a>
+                              <a className="nav-link " href="#" >Ornaments</a>
                             </li>
                           </ul>
                         </div>
@@ -204,12 +203,16 @@ function Header () {
                     {/* cart starts */}
                     <Link to="/cart">
                       <li className="nav-item text-white fs-6">
-                      <Link to="/cart">Cart</Link>
+                      <Link to="/cart"> Cart</Link>
                       </li>
                     </Link>
                     {/* cart ends */}
 
                     {/* sign-in starts */}
+                    {loggedin == true ? 
+                    <li>
+                    <button className="btn btn-danger me-2 mt-5 ms-4" onClick={logOut}>Logout</button>
+                  </li>:
                     <li className="nav-item">
                       <a className="a_b1 " href="#"> <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" height="25px" width="25px" /> Sign in</a>
                       {/* sign-in dropdown starts*/}
@@ -225,12 +228,10 @@ function Header () {
                           <Link to="/login"  className='btn btn-danger me-4 mt-3'>Login
                           </Link>
                         
-                        <li>
-                          <button className="btn btn-danger me-2 mt-5 ms-4">Logout</button>
-                        </li>
                       </ul>
                       {/* sign-in dropdown ends */}
                     </li>
+                  }
                     {/* sign-in ends */}
                   </ul>
                 </div>

@@ -9,6 +9,9 @@ import Cart from '../Pages/Cart';
 import Checkout from '../Pages/Checkout';
 import CartHome from '../pages/CartHome';
 import MensFashionHome from '../pages/MensFashionHome';
+import WomensFashionHome from '../pages/WomensFashionHome';
+import OrnamentsHome from '../Pages/OrnamentsHome';
+
 //import { CartProvider } from 'react-use-cart';
 
 
@@ -22,14 +25,13 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
 
-
-      
-      {/* <CartProvider> */}
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/CartHome" element={<CartHome/>}/> 
       <Route path="/MensFashionHome" element={<MensFashionHome/>}/> 
+      <Route path="/WomensFashionHome" element={<WomensFashionHome/>}/> 
+      <Route path="/OrnamentsHome" element={<OrnamentsHome/>}/> 
 
-      {/* </CartProvider> */}
+
 
       </Routes>
      </BrowserRouter>

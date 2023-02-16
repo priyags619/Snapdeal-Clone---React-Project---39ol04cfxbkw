@@ -24,6 +24,7 @@ function handleSignUp(e){
   }
     setUserData({userName , email , password})
     setAuthenticated(true);
+    
   }
 
   useEffect(() => {
@@ -36,31 +37,31 @@ function handleSignUp(e){
 
 
   return (
-    <div className="wrapper ">
+    <div className="wrapper register">
      <div className="container card">
      <div className="heading text-center">
-        <h2 style={{fontFamily :"Anton" , letterSpacing : "1px"}} className="text-danger">Sign-Up</h2>
+        <h2 style={{fontFamily :"Anton" , letterSpacing : "1px"}} className="  mt-4 fs-1 text-danger">Sign-Up</h2>
      </div>
 
      <div className="login-container container my-5  row">
        <div className="col-md-12 pt-3">
-         <h5>Sign Up..</h5>
-         <form className="my-3" onSubmit={handleSignUp} autoComplete="off">
-          <div className="form-group">
+         <h5 className="ms-5">Sign Up..</h5>
+         <form className="my-3 " onSubmit={handleSignUp} autoComplete="off">
+          <div className="form-group ms-4 mt-3 ">
                 <input value={userName} type="text"  required placeholder="UserName" className="form-control" onChange={e => setUserName(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group ms-4 mt-3 ">
                 <input value={email} type="email"  required placeholder="Email" className="form-control" onChange={e => setUserEmail(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group ms-4 mt-3 ">
                 <input value={password} type="password"  required placeholder="Password" className="form-control" onChange={e => setPassword(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group ms-5 mt-3 ">
                 <button type="submit" className="btn btn-primary">Sign Up</button>
                 <br />
             </div>
             </form>
-            <span role="button" className="text-primary" onClick={() =>  navigate('/')}>Already A User..</span>
+            <span role="button" className="text-primary ms-5 mt-3" onClick={() =>  navigate('/')}>Already A User..</span>
        </div>
      </div>
     </div>

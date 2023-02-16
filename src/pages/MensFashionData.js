@@ -1,10 +1,10 @@
 import React from 'react'
-import mala from '../assets/images/mala.jpg'
-import wallet from '../assets/images/wallet.jpg'
-import tshirt from '../assets/images/tshirt.jpg'
-import watch from '../assets/images/watch.jpg'
-import shoe from '../assets/images/shoe.jpg'
-import earrings from '../assets/images/earrings.jpg'
+import mala from '../assets/images/Mensfashion/mala.jpg'
+import wallet from '../assets/images/Mensfashion/wallet.jpg'
+import watch from '../assets/images/Mensfashion/watch.jpg'
+import tshirt from '../assets/images/Mensfashion/tshirt.jpg'
+import shoe from '../assets/images/Mensfashion/shoe.jpg'
+import chappal from '../assets/images/Mensfashion/chappal.jpg'
 
 const MensFashionData= {
     productData:[
@@ -42,11 +42,19 @@ const MensFashionData= {
         },
         {
             id:5,   
-            img: earrings,
-            title: 'earrings',
+            img: shoe,
+            title: 'shoe',
             desc: '',
             price: 879,
             rating: 4.5
+        },
+        {
+            id:6,   
+            img: chappal,
+            title: 'chappal',
+            desc: '',
+            price: 879,
+            rating: 4.2
         }
     ],
 }; 

@@ -35,23 +35,23 @@ function Login() {
 
      <div className="container card">
      <div className="heading text-center">
-        <h1  className="text-danger"style={{fontFamily :"Anton" , letterSpacing : "1px"}}>Login</h1>
+        <h1  className=" mt-4 fs-1 text-danger"style={{fontFamily :"Anton" , letterSpacing : "1px"}}>Login</h1>
      </div>
      <div className="login-container container my-5  row">
        <div className="col-md-12 pt-3">
-         <h5>Login</h5>
-         <form className="my-3" onSubmit={handleLogin} autoComplete="off">
-            <div className="form-group">
+         <h5 className="ms-5 mt-2">Login</h5>
+         <form className="my-3 ms-4" onSubmit={handleLogin} autoComplete="off">
+            <div className="form-group mt-4">
                 <input value={email} type="email"  required placeholder="Email" className="form-control"   onChange={e => setEmail(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group mt-4">
                 <input value={password} type="password"  required placeholder="Password" className="form-control"  onChange={e => setPassword(e.target.value)}/>
             </div>
-            <div className="form-group">
+            <div className="form-group mt-4 ms-4">
                 <button type="submit" className="btn btn-primary">Login</button>
             </div>
             </form>
-            <span role="button" className="text-primary cursor-pointer" onClick={() =>  navigate('/register')}>Sign Up Here..</span>
+            <span role="button" className="text-primary cursor-pointer ms-5" onClick={() =>  navigate('/register')}>Sign Up Here..</span>
 
        </div>
      </div>

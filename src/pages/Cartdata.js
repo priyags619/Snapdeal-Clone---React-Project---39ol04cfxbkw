@@ -1,49 +1,40 @@
 import React from 'react'
-import mala from '../assets/images/mala.jpg'
-import wallet from '../assets/images/wallet.jpg'
-import tshirt from '../assets/images/tshirt.jpg'
-import watch from '../assets/images/watch.jpg'
-import shoe from '../assets/images/shoe.jpg'
-import earrings from '../assets/images/earrings.jpg'
+import AppleiPhone from '../assets/images/devices/AppleiPhone.jpg'
+import camera from '../assets/images/devices/camera.jpg'
+import speaker from '../assets/images/devices/speaker.jpg'
+import blackearpods from '../assets/images/devices/blackearpods.jpg'
+
 
 const Cartdata = {
     productData:[
         {
             id:1,   
-            img: tshirt,
-            title: 'tshirt',
+            img: AppleiPhone,
+            title: 'AppleiPhone',
             desc: '',
             price: 879,
             rating: 4.2
         },
         {
             id:2,   
-            img: watch,
-            title: 'watch',
+            img: camera,
+            title: 'camera',
             desc: '',
             price: 879,
             rating: 4.2
         },
         {
             id:3,   
-            img: wallet,
-            title: 'wallet',
+            img: speaker,
+            title: 'speaker',
             desc: '',
             price: 879,
             rating: 4.5
         },
         {
-            id:4,   
-            img: mala,
-            title: 'mala',
-            desc: '',
-            price: 479,
-            rating: 4.5
-        },
-        {
-            id:5,   
-            img: earrings,
-            title: 'earrings',
+            id:54,   
+            img: blackearpods,
+            title: 'blackearpods',
             desc: '',
             price: 879,
             rating: 4.5
