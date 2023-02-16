@@ -23,12 +23,15 @@ function handleSignUp(e){
     return;
   }
     setUserData({userName , email , password})
+
     setAuthenticated(true);
-    
+
   }
 
   useEffect(() => {
+    localStorage.setItem('authenticated', true)
     if(authenticated) navigate('/');
+
   })
   
   useEffect(() => {

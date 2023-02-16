@@ -1,15 +1,16 @@
 //import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Login from '../pages/Login'
 import React, { useState } from 'react'
 import Register from '../pages/Register'
 
 function Header () {
-   const[loggedin,setLoggedIn] = useState(localStorage.getItem('authenticated') || false)
+   const [loggedin, setLoggedIn] = useState(localStorage.getItem('authenticated'))
   const logOut = () =>{
     console.log("Welcome")
+    
   }
+  console.log(loggedin)
   return(
     <React.Fragment>
     
