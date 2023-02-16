@@ -15,9 +15,12 @@ import tshirt from '../assets/images/tshirt.jpg'
 import saree from '../assets/images/saree.jpg'
 import mala from '../assets/images/mala.jpg'
 import shoe from '../assets/images/shoe.jpg'
+import code from '../assets/images/code.jpg'
+import rightbarimage from '../assets/images/rightbarimage.jpg'
 import { Link } from 'react-router-dom'
 import CartHome from '../pages/CartHome'
 import MensFashionHome from './MensFashionHome'
+
 
 
 
@@ -29,52 +32,56 @@ function Home() {
 
             <div className='row m-0 a_main1_b1'>
                 <div className='col-2 bg-white main_b1_left pe-0 pt-3 pb-3 position-relative'>
-                    <h6 className='fs-6'>TOP CATEGORIES</h6>
-                    <ul class=" nav flex-column asidenav">
-                        <li class="nav-item">
-                            <Link to="/CartHome">Electronics</Link>
+                    <h6 className='fs-5 mt-3'>TOP CATEGORIES</h6>
+                    <ul class=" nav flex-column asidenav fs-5">
+                        <li class="nav-item  mt-3">
+                            <Link to="/CartHome" >Electronic Devices</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">All offers</a>
+                            <Link to="/MensFashionHome">Mens's Fashions</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mobile &amps; tables</a>
+                            <Link to="/WomensFashionHome">Women's Fashion</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>C</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" >Computrs and gamings</a>
+                            <Link to="/OrnamentHome">Ornaments</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>D</div>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <a class="nav-link " href="#" >Home and kitchens</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>E</div>
-                        </li>
+                        </li> */}
                     </ul>
-                    <h6 className='mt-4 fs-6'>MORE CATEGORIES</h6>
-                    <ul class=" nav flex-column asidenav asidenav2">
+                    <h6 className='mt-4 fs-4 mt-10'>Recent Searches</h6>
+                    <ul class=" nav flex-column asidenav asidenav fs-5">
                         <li class="nav-item">
-                            <Link to="/MensFashionHome">Men'sFashions</Link>
+                            <a className="mt-6">Men'sFashions</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Women's Fashions</a>
+                            <a className="mt-6">Women's Fashions</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mobile &amps; tables</a>
+                            <a className="mt-6">Electronic Devices</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>C</div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" >Computrs and gamings</a>
+                            <a className="mt-6">Ornaments</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>D</div>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <a class="nav-link " href="#" >Home and kitchens</a>
                             <div className='position-absolute top-0 asidenav_rightbox'>E</div>
-                        </li>
+                        </li> */}
                     </ul>
+                    <div className='mt-5 qrcode'>
+                    <img src={code} style={{width:"190px" ,height:"190px"}}/>
+                    <div className='mt-3'>Enjoy Convenient Order Tracking</div>
+                    </div>
                 </div>
 
                 <div className='col-10'>
@@ -117,17 +124,11 @@ function Home() {
                             <div className="a_sliderrbox position-absolute top-0 start-0 login">
                                 <div className='text-center'>
                                     <div className="a_pinging">
-                                        <img src="https://couponswala.com/blog/wp-content/uploads/2021/10/Snapdeal-Upcoming-Sale.jpg" height="160px" width="250px" />
+                                        <img src={rightbarimage} style={{width:"256px" ,height:"339px"}} />
                                     </div>
-                                    <div className="pt-3">
-                                        <span>Login to your <div>Snapdeal account </div></span>
-                                    </div>
-                                    <button className=" mt-3 ps-5 pe-5 text-white login">LOG IN</button>
+                                  
                                 </div>
-                                <div className='pt-4 ps-2'>
-                                    <p className="float-start">New User? <a href="#">Register</a> </p>
-                                    <button className="btn btn-secondary pe-2 mb-2 float-end next">NEXT</button>
-                                </div>
+                               
                             </div>
 
                         </div>
@@ -135,7 +136,7 @@ function Home() {
                     </div>
 
                   
-                    <div className='a_trending_products '>
+                    <div className=' ms-4 a_trending_products '>
                         <h3>Trending Products</h3>
                         <div id="carouselExampleControls" className="carousel slide carousel_trending" data-bs-ride="carousel">
                             <div className="carousel-inner text-start ">
@@ -145,25 +146,28 @@ function Home() {
                                         <div className='col tbdr p-0 '>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={watch} style={{width:"100%"}}/>
-                                                <p><div>jlbljb</div></p>
+                                            <h6 className='mt-1'>Blue-sharp Watch-Rs.896</h6>
                                             </div>
-
                                         </div>
+                                        
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={mala} style={{width:"100%"}}/>
-                                            <p>bjbjlblk<div>jlbljb</div></p>
+                                            <div className='mt-1'>Rudraksha-Gold-plated-Rs.456</div>
                                             </div>
+
                                         </div>
                                        
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
-                                            <img src={dress} style={{width:"100%"}}/>
+                                            <img src={dress} style={{width:"100%" ,height:"72%"}}/>
+                                            <div className='mt-1'>Pink-maxi-Rs.916</div>
                                             </div>
                                         </div>
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={wallet} style={{width:"100%"}}/>
+                                            <div className='mt-1'>Leather Zip Wallet-Rs.1263</div>
                                             </div>
                                         </div>
                                     </div>
@@ -174,21 +178,25 @@ function Home() {
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={chopper} style={{width:"100%"}}/>
+                                            <div className='mt-1'>Vegetable Cutter-Rs.394</div>
                                             </div>
                                         </div>
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
-                                            <img src={shoe} style={{width:"100%", height:"70%"}}/>
+                                            <img src={shoe} style={{width:"100%", height:"75%"}}/>
+                                            <div className='mt-1'>Casual-men Shoe-Rs.962</div>
                                             </div>
                                         </div>
                                         <div className='col tbdr p-0'>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={tshirt} style={{width:"100%"}}/>
+                                            <div className='mt-1'>Veirdo-T-Shirt-Rs.766</div>
                                             </div>
                                         </div>
                                         <div className='col tbdr p-0'>
                                            <div className="btn btn-white rounded-0 w-100 h-100">
-                                           <img src={saree} style={{width:"100%"}}/>
+                                           <img src={saree} style={{width:"100%", height:"75%"}}/>
+                                           <div className='mt-1'>Red Georgette-Rs.1896</div>
                                            </div>
                                         </div>
                                     </div>
@@ -209,15 +217,14 @@ function Home() {
                            
                         </div>
                     </div>
-
-
-
+                  
                 </div>
+                
             </div>
 
         </div>
         
-        <div className='container-fluid bg-white mt-5 a_main2 '>
+        <div className='container-fluid bg-white mt-6 a_main2 '>
             <div className='row m-0 h-100 bg-white'>
                 <div className='col-6 p-0 tbdr dld_banner'></div>
                 <div className='pt-5 ps-5 col-3 tbdr'>

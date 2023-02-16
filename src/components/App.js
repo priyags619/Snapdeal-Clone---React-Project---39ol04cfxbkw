@@ -12,8 +12,6 @@ import MensFashionHome from '../pages/MensFashionHome';
 //import { CartProvider } from 'react-use-cart';
 
 
-
-
 function App() {
   const [authenticated,setAuthenticated ] = useState(false)
   return (
@@ -23,6 +21,8 @@ function App() {
       <Route path="/register" element={<Register />}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
+
+
       
       {/* <CartProvider> */}
       <Route path="/cart" element={<Cart/>}/>
