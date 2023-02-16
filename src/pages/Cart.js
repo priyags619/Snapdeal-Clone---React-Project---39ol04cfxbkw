@@ -56,7 +56,7 @@ const Cart = () => {
         className='btn btn-danger m-2'
         onClick={() => emptyCart()}
         >Click Cart</button>
-        <button className="btn btn-primary m-2">Buy Now</button>
+        <Link to="/Checkout" className="btn btn-primary m-2">Checkout</Link>
         <Link to="/" className="btn btn-primary m-2">Home</Link>
 
       </div>

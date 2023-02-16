@@ -407,7 +407,13 @@ font-family: inherit;
     margin-left: 40px;
     
 }
-   
+.payment{
+    height: 500px;
+    width: 900px;
+    border: 1px dashed black;
+    margin-left: 225px !important;
+    margin-top: 50px;
+}
 
 /******************************************* Home css End ****************************************/ 
 

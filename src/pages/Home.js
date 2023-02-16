@@ -145,7 +145,7 @@ function Home() {
                                         <div className='col tbdr p-0 '>
                                             <div className="btn btn-white rounded-0 w-100 h-100">
                                             <img src={watch} style={{width:"100%"}}/>
-                                                <p>bjbjlblk<div>jlbljb</div></p>
+                                                <p><div>jlbljb</div></p>
                                             </div>
 
                                         </div>
@@ -224,7 +224,7 @@ function Home() {
                     <h1>Download Snapdeal App Now</h1>
                     <div className='pt-3'>Fast, Simple & Delightful.</div>
                     <div>All it takes is 30 seconds to Download.</div>
-                    <button className='btn google' style={{ width: '122px', height: '42px' }}></button>
+                    <a href="https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN&gl=US" className='btn google' style={{ width: '122px', height: '42px' }}></a>
                 </div>
                 <div className='col-3 p-0 dld_banner_right'>
                 </div>
