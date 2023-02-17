@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import Login from "../pages/Login";
+// import Login from "../pages/Login";
 import React, { useState } from "react";
 import Register from "../pages/Register";
 import Logout from "../pages/Logout";
+
 
 function Header() {
   
@@ -299,8 +300,8 @@ function Header() {
                         
                         <Link to="/register" className="btn btn-success me-4 mt-3">SignUp</Link>
                         
-                        <Link to="/login" className="btn btn-danger me-4 mt-3">Login</Link>
-                        <li className="btn btn-success mt-5 ps-4 pe-4"> logout</li>
+                        {/* <div className="btn btn-danger me-4 mt-3">Login</div> */}
+                        {/* <li className="btn btn-success mt-5 ps-4 pe-4"> logout</li> */}
                       </ul>
                       
                       {/* sign-in dropdown ends */}
