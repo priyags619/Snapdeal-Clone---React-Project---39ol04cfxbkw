@@ -2,19 +2,18 @@ import React,{ useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 
-function getUserData(){
-  const userData = localStorage.getItem('userData');
-  if(userData) return JSON.parse(localStorage.getItem('userData'));
+function getUserDate(){
+  const userDate = localStorage.getItem('userData');
+  if(userDate) return JSON.parse(localStorage.getItem('userData'));
   else return [];
 }
 
 
 function Login() {
   const navigate = useNavigate();
-
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
-  const [userData , setUserData] = useState(getUserData());  
+  const [userData , setUserData] = useState(getUserDate());  
 
 
   function handleLogin(e){

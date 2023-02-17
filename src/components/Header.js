@@ -1,4 +1,3 @@
-//import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import Login from "../pages/Login";
 import React, { useState } from "react";
@@ -197,14 +196,14 @@ function Header() {
             <div className="row parent">
               {/* snapdeal logo starts */}
               <div className=" btn col-3 m-0 ps-0 ms-0">
-                <a href="/" className="">
+                <div>
                   <img
                     className=" mb-3 ms-0"
                     src="https://www.snapdeal.com/img/icons/finalFavicon.ico"
                     height="40px"
                   />
                   <span className="snapdeal  text-white">snapdeal</span>
-                </a>
+                </div>
               </div>
               {/* snapdeal logo ends */}
 
@@ -278,7 +277,7 @@ function Header() {
                
 
                     <li className="nav-item">
-                      <a className="a_b1 " href="#">
+                      <div className="a_b1 " >
                         {" "}
                         <img
                           src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"
@@ -286,7 +285,7 @@ function Header() {
                           width="25px"
                         />{" "}
                         Sign in
-                      </a>
+                      </div>
                       {/* sign-in dropdown starts*/}
                       <ul className="sign-in-list border-bottom">
                         <li className="nav-item signin_bottom">
@@ -297,17 +296,11 @@ function Header() {
                             </h5>
                           </div>
                         </li>
-                        <Link
-                          to="/register"
-                          className="btn btn-success me-4 mt-3"
-                        >
-                          SignUp
-                        </Link>
-
-                        <Link to="/login" className="btn btn-danger me-4 mt-3">
-                          Login
-                        </Link>
-                        <li className="btn btn-success mt-5 ps-5"> logout</li>
+                        
+                        <Link to="/register" className="btn btn-success me-4 mt-3">SignUp</Link>
+                        
+                        <Link to="/login" className="btn btn-danger me-4 mt-3">Login</Link>
+                        <li className="btn btn-success mt-5 ps-4 pe-4"> logout</li>
                       </ul>
                       
                       {/* sign-in dropdown ends */}

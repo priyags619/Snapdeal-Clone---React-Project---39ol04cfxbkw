@@ -36,50 +36,41 @@ function Home() {
             <div className='row m-0 a_main1_b1'>
                 <div className='col-2 bg-white main_b1_left pe-0 pt-3 pb-3 position-relative'>
                     <h6 className='fs-5 mt-3'>TOP CATEGORIES</h6>
-                    <ul class=" nav flex-column asidenav fs-5">
-                        <li class="nav-item  mt-3">
+                    <ul className=" nav flex-column asidenav fs-5">
+                        <li className="nav-item  mt-3">
                             <Link to="/CartHome" >Electronic Devices</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>A</div>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/Menhome">Mens's Fashions</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>B</div>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/Womenhome">Women's Fashion</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>C</div>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to="/Ornamenthome">Ornaments</Link>
                             <div className='position-absolute top-0 asidenav_rightbox'>D</div>
                         </li>
-                        {/* <li class="nav-item">
-                            <a class="nav-link " href="#" >Home and kitchens</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>E</div>
-                        </li> */}
+                       
                     </ul>
                     <h6 className='mt-4 fs-4 mt-10'>Recent Searches</h6>
-                    <ul class=" nav flex-column asidenav asidenav fs-5">
-                        <li class="nav-item">
-                            <a className="mt-6">Men'sFashions</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>A</div>
+                    <ul className=" nav flex-column asidenav asidenav fs-5">
+                        <li className="nav-item">
+                            <div className="mt-6">Men'sFashions</div>
+                            
                         </li>
-                        <li class="nav-item">
-                        <a className="mt-6">Women'sFashions</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>B</div>
+                        <li className="nav-item">
+                        <div className="mt-6">Women'sFashions</div>
                         </li>
-                        <li class="nav-item">
-                            <a className="mt-6">Electronic Devices</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>C</div>
+                        <li className="nav-item">
+                            <div className="mt-6">Electronic Devices</div>
                         </li>
-                        <li class="nav-item">
-                            <a className="mt-6">Ornaments</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>D</div>
+                        <li className="nav-item">
+                            <div className="mt-6">Ornaments</div>
                         </li>
-                        {/* <li class="nav-item">
-                            <a class="nav-link " href="#" >Home and kitchens</a>
-                            <div className='position-absolute top-0 asidenav_rightbox'>E</div>
-                        </li> */}
+                        
                     </ul>
                     <div className='mt-5 qrcode'>
                     <img src={code} style={{width:"190px" ,height:"190px"}}/>
@@ -234,7 +225,7 @@ function Home() {
                     <h1>Download Snapdeal App Now</h1>
                     <div className='pt-3'>Fast, Simple & Delightful.</div>
                     <div>All it takes is 30 seconds to Download.</div>
-                    <a href="https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN&gl=US" className='btn google' style={{ width: '122px', height: '42px' }}></a>
+                     <a href="https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN&gl=US" className='btn google' style={{ width: '122px', height: '42px' }}></a> 
                 </div>
                 <div className='col-3 p-0 dld_banner_right'>
                 </div>
